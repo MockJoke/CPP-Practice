@@ -18,7 +18,7 @@
 // }
 
 // Here int *ptr; - it's an uninitialised pointer and later on at *ptr = x; - that uninitialised pointer is getting assigned some value.
-//  it's assigning a value to the memory location *ptr without first allocating or pointing ptr to a valid memory address
+// it's assigning a value to the memory location *ptr without first allocating or pointing ptr to a valid memory address
 
 #include <iostream>
 
