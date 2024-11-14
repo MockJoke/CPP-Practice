@@ -1,6 +1,6 @@
 #include<iostream>
 
-int main()
+void PeakElement()
 {
     int n;
 
@@ -10,7 +10,7 @@ int main()
     int arr[n];
 
     if (n == 0)
-        return 0;
+        return;
 
     std::cout << "Enter the elements of the array: ";
 
@@ -45,6 +45,11 @@ int main()
             }
         }
     }
+}
+
+int main()
+{
+    PeakElement();
 
     return 0;
 }

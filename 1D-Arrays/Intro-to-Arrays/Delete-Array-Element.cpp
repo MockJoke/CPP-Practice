@@ -19,16 +19,16 @@ int main()
         std::cin >> arr[i];
     }
 
-    int num_to_delete;
+    int element_to_delete;
 
     std::cout << "Enter the element you want to delete from the array: ";
-    std::cin >> num_to_delete;
+    std::cin >> element_to_delete;
 
     int to_be_deleted_element_index = -1;
 
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] == num_to_delete)
+        if (arr[i] == element_to_delete)
         {
             to_be_deleted_element_index = i;
             break;
@@ -46,16 +46,18 @@ int main()
             arr[i] = arr[i+1];
         }
 
+        n--;
+
         std::cout << "Element found and deleted." << '\n';
         std::cout << "Updated array: " << '\n';
 
-        if (n-1 == 0) 
+        if (n == 0) 
         {
             std::cout << "Empty array\n"; 
         }
         else 
         {
-            for (int i = 0; i < n - 1; i++)
+            for (int i = 0; i < n; i++)
             {
                 std::cout << arr[i] << '\n';
             }
